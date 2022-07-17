@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="col"><h1>{{titulo}}</h1></div>
+    <form class="form-group row">
+      <div class="from-grup col-md-3">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="from-control" [(ngModel)]="cuadroNombre">
+  
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="from-control" [(ngModel)]="cuadroApellido">
+  
+        <label for="nombre">Cargo:</label>
+        <input type="text" name="cargo" id="cargo" placeholder="Cargo" class="from-control" [(ngModel)]="cuadroCargo">
+  
+        <label for="nombre">Salario:</label>
+        <input type="text" name="salario" id="salario" placeholder="Salario" class="from-control" [(ngModel)]="cuadroSalario">
+        
+        <div>
+          <button type="submit" class="btn btn-primary" (click)="agregarEmpleado()">Agregar</button>
+        </div>
+      
+  
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+  
+  
+  <app-lista-empleados *ngFor="let empleado of empleadosArray; let i=index;" [indice]="i" [empleadoDeLista]="empleado"></app-lista-empleados>
+  
+  <br>
+  <br>

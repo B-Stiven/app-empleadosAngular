@@ -1,0 +1,27 @@
+<p>actualiza-component works!</p>
+
+<form class="form-group row">
+    <div class="from-grup col-md-3">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="from-control" [(ngModel)]="cuadroNombre">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" placeholder="Apellido" class="from-control" [(ngModel)]="cuadroApellido">
+
+      <label for="nombre">Cargo:</label>
+      <input type="text" name="cargo" id="cargo" placeholder="Cargo" class="from-control" [(ngModel)]="cuadroCargo">
+
+      <label for="nombre">Salario:</label>
+      <input type="text" name="salario" id="salario" placeholder="Salario" class="from-control" [(ngModel)]="cuadroSalario">
+      
+      <div>
+        <button type="submit" class="btn btn-primary" (click)="ejecutarTarea()" style="margin-right:20px">Accion</button>
+        <!-- <button type="submit" class="btn btn-primary" (click)="eliminarEmpleado()">Eliminar</button> -->
+      </div>
+    
+
+    </div>
+  </form>
+<div style="text-align: center;">
+    <button  class="ntn btn-primary" (click)="volver()">Ir a inicio</button>
+</div>
